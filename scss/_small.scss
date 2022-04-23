@@ -83,6 +83,7 @@ button#hamburgerBtn {
 }
 nav {
     background-color: $secondaryColor;
+    font-family: 'Permanent Marker', cursive;
 }
 
 nav ul{
@@ -95,7 +96,7 @@ nav li {list-style-type: none;}
 nav a {
     display: block;
     padding: .8rem 0; 
-    color: #eee;
+    color: rgb(61, 61, 61);
     text-align: center;
     text-decoration: none;
 }

@@ -392,7 +392,8 @@ button#hamburgerBtn {
   padding: 0 30px 0 2vw; }
 
 nav {
-  background-color: #0b8ad4; }
+  background-color: #0b8ad4;
+  font-family: 'Permanent Marker', cursive; }
 
 nav ul {
   margin: 0;
@@ -405,7 +406,7 @@ nav li {
 nav a {
   display: block;
   padding: .8rem 0;
-  color: #eee;
+  color: #3d3d3d;
   text-align: center;
   text-decoration: none; }
 
