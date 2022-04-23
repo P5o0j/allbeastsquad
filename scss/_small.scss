@@ -1,12 +1,18 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* { 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
 
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Sriracha', cursive;
     font-size: 16px;
     font-weight: 300;
+    background-color: #000000;
 }
 
 /* GRID */
@@ -22,13 +28,28 @@ body {
 
 /* header rules */
 header {
-    background-color: $primaryColor;
+    background-color: $secondaryColor;
 }
-header img {
+/*header img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
     float: left; 
     height: 85px;
     padding-right: 10px; 
-    
+}*/
+.header-img {
+    background-image: url('/img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 360px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header div {
+    text-align: center;
 }
 header h1, header h2 {
     margin: 0;
@@ -44,19 +65,31 @@ header h2{
 	padding: .2rem 0 0 0; 
 	font-size:1.05rem;    
 }
+.logo {
+    object-fit: contain;
+    position: absolute;
+    top: 30px;
+}
 
 
 /* navigation rules */
 button#hamburgerBtn { 
     background: none;
     border:none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 2.4rem;
     cursor: pointer;
     padding: 0 30px 0 2vw;
 }
-nav {background-color: $secondaryColor;}
-nav ul{margin:0; padding: 0;}
+nav {
+    background-color: $secondaryColor;
+}
+
+nav ul{
+    margin: 0; 
+    padding: 0;
+    float: right;
+}
 nav li {list-style-type: none;}
 
 nav a {
@@ -66,7 +99,7 @@ nav a {
     text-align: center;
     text-decoration: none;
 }
-nav li.active {background-color: rgba(0,0,0,0.5);}
+nav li.active {background-color: rgba(255, 255, 255, 0.5);}
 nav a:hover {background-color: rgba(0,0,0,0.2);}
 nav ul.open {display: block;}
 nav ul {display: none;}
@@ -120,7 +153,7 @@ main{
 
 
 footer{
-    background-color: $primaryColor;
+    background-color: $secondaryColor;
     font-size: 1.2rem;
 }
 footer h2 {

@@ -10,23 +10,69 @@
     <meta name="author" content="All Beast Squad"> 
     <title>Home | All Beast Squad</title>
     <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sriracha&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-
+        <div class="header-img">
+            <div class="logo">
+                <a href="/"><img src="img/Logo.png" alt="logo" height="150px" width="250px"></a>
+            </div>
+        </div>
     </header>
 
-    <nav>
-
+    <nav class="clearfix">
+        <div class="row limited">
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+            </div> <!-- end row -->
     </nav>
 
     <main>
-
+        
     </main>
 
-    <footer>
-
+    <footer class="clearfix">
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany's Pie Shop</li>
+                    <li>123 Bakery Street</li> 
+                    <li>Brussels, Belgium</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li> 
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li> 
+                    <li>Instagram</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="images/logo2.png" alt="logo">
+                <p>&copy; 2020 &bull; all rights reserved.</p>
+            </section>
+</div> <!-- end row -->
     </footer>
-    
+    <script src="js/menuToggle.js"></script> 
 </body>
 </html>
