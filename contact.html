@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Business Promotion Under the Sun">
-    <meta name="keywords" content="............">
+    <meta name="keywords" content="contact, website, advertising, promotion, small business">
     <meta name="author" content="All Beast Squad"> 
     <title>Contact Us | All Beast Squad</title>
     <link rel="icon" type="image/png" href="img/fav.png" />
@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -38,13 +39,32 @@
         </ul>
             </div> <!-- end row -->
     </nav>
-
+    <!-- START OF MAIN CONTENT SECTION -->
     <main>
         <div>
-            <p>TEST TEXT</p>
+            <form action="/php/handler.php" method="post" enctype="text/plain" name="FormData">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                        <p><label for="name">Name<br />
+                        <input type="text" name="name" required minlength="3" maxlength="35" /></label></p>
+                        <p><label for="phone">Phone Number<br />
+                        <input type="tel" name="phone" /></label></p>
+                        <p><label for="email">Email Address<br />
+                        <input type="email" name="email" required /></label></p>
+                        <input type="hidden" name="source" value="ContactForm" />
+                        <p><label for="message">Message: <br />
+                        <textarea cols="40" rows="3" name="message" required>test</textarea></label></p>
+
+                        <input type="submit" value="Send" />
+                        <button type="submit" id="myButton">Sub</button>
+                        <button type="reset">Reset</button>
+
+                </fieldset>
+            </form>
+            
         </div>
     </main>
-
+    <!-- END OF MAIN CONTENT SECTION -->
     <footer class="clearfix">
         <div class="row limited">
             <section class="column small-12 medium-6 large-4">
@@ -73,5 +93,10 @@
 </div> <!-- end row -->
     </footer>
     <script src="js/menuToggle.js"></script> 
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "contact_sub.html";
+        };
+    </script>
 </body>
 </html>
