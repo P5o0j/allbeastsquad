@@ -42,21 +42,23 @@
     <!-- START OF MAIN CONTENT SECTION -->
     <main>
         <div>
-            <form action="/php/handler.php" method="post" enctype="text/plain" name="FormData">
+            <form action="https://formsubmit.co/wazosifu@maildim.com" method="POST" enctype="text/plain" name="FormData">
                 <fieldset>
                     <legend>Contact Us</legend>
+                        <input type="hidden" name="_next" value="...">
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <input type="hidden" name="_cc" value="...">
                         <p><label for="name">Name<br />
-                        <input type="text" name="name" required minlength="3" maxlength="35" /></label></p>
+                        <input type="text" name="_name" required minlength="3" maxlength="35" /></label></p>
                         <p><label for="phone">Phone Number<br />
                         <input type="tel" name="phone" /></label></p>
                         <p><label for="email">Email Address<br />
-                        <input type="email" name="email" required /></label></p>
+                        <input type="email" name="_email" required /></label></p>
                         <input type="hidden" name="source" value="ContactForm" />
                         <p><label for="message">Message: <br />
                         <textarea cols="40" rows="3" name="message" required>test</textarea></label></p>
 
-                        <input type="submit" value="Send" />
-                        <button type="submit" id="myButton">Sub</button>
+                        <button type="submit">Send</button>
                         <button type="reset">Reset</button>
 
                 </fieldset>
